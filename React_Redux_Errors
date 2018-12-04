@@ -1,0 +1,6 @@
+---- ERRORS ----
+
+1. import {connect} from 'react-redux'   (forgot to add react-redux)
+
+Uncaught TypeError: Object(...) is not a function
+    at Module../frontend/components/todos/todo_list_container.jsx (todo_list_container.jsx:15)

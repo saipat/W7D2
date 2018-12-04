@@ -6,15 +6,16 @@ import allTodos from './reducers/selectors';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
-  const store = configureStore();  
+  const store = configureStore();
+
   window.store = store;
   window.allTodos = allTodos;
-  
+
   ReactDOM.render(
     <div>
       <h1>Todos App</h1>
-      <Root />
-    </div>, 
+      <Root store={store}/>
+    </div>,
     root
   );
 });
